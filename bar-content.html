@@ -1,0 +1,72 @@
+<!-- IMPORTANT MESSAGE BANNER   -->
+  <div id="ww-important-message-banner" class="ww-important-message-banner" style="display:block;">
+    <div class="container">
+      <span><strong>Coronavirus Statement: </strong> Christie's Interiors of Doncaster are open for business.</span>
+      <span class="imb-btn">
+        <a href="/coronavirus-statement">Read More</a>
+      </span>
+    </div>
+
+    <style media="screen">
+      .ww-important-message-banner {
+        box-sizing: border-box;
+        width: 100%;
+        background: black;
+        color: #eee;
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 17px 0;
+        line-height: 1.8;
+        font-size: 19px;
+        font-family: sans-serif;
+      }
+      .imb-btn {
+        display: inline-block;
+        padding: 0 9px;
+        background: #e5e5e5;
+        border-radius: 4px;
+        margin-left: 10px;
+        transition: 0.4s;
+      }
+      .imb-btn a,
+      .imb-btn a:visited,
+      .imb-btn a:active,
+      .imb-btn a:hover {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .imb-btn:hover {
+        background: #ccc;
+      }
+      @media only screen and (max-width: 780px) {
+        .ww-important-message-banner,
+        .imb-btn a {
+          font-size: 14px;
+        }
+      }
+      @media only screen and (max-width: 450px) {
+        .ww-important-message-banner {
+          padding: 7px 0;
+        }
+      }
+    </style>
+  </div>
+  <script type="text/javascript">
+    var wwimb = document.getElementById('ww-important-message-banner');
+    var webpage_body = document.getElementsByTagName("BODY")[0];
+    set_body_padding();
+    window.addEventListener("resize", set_body_padding);
+    function set_body_padding() {
+      var wwimbHeight = wwimb.clientHeight + "px";
+      webpage_body.style.paddingTop = wwimbHeight;
+      // console.log("running");
+      // console.log(wwimbHeight);
+    }
+  </script>
+
+<!-- IMPORTANT MESSAGE BANNER END   -->
